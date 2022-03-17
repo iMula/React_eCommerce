@@ -1,38 +1,339 @@
-.App {
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  margin:auto;
+}
+
+body{
+  font-family: 'Readex Pro', sans-serif;
+}
+
+header{
+background-image: url("/images/hero-image.jpeg");
+height:100vh;
+background-size:cover;
+background-position: center;
+}
+
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul{
+  display: inline-block;
+  list-style-type:none;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a{
+  text-decoration:none ;
+  color:#555;
+  padding:5px 20px;
+ border: 1px solid transparent;
+ transition:0.6s ease;
+}
+
+a:hover{
+  background-color:white;
+  color:black;
+}
+
+.active a{
+  background-color:white;
+  color:black;
+}
+
+/* welcome title on home page */
+.col-2 h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  color:#555;
+  font-size: medium;
+  text-align: center;
+}
+/* navbar conatiner */
+.container{
+  max-width: 1300px;
+  margin:auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* featured products home page */
+.categories{
+  margin:70px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.row{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.col-3{
+  flex-basis:30%;
+  min-width:250px;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.col-3 img{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+
+/* Shop Page css */
+.product-list{
+  background-color: #fff;
+  padding:3em;
+
+}
+
+.product-list h1{
+  text-align: center;
+}
+
+.product-list .card{
+  background-color: #fff;
+  border-radius: 10px;
+  padding:1em;
+  box-shadow: 0px 5px 5px black;
+  text-align: center;
+}
+
+.card .title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card img{
+  max-width: 100%;
+}
+
+.card .text {
+  text-align: left;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+
+.buy-button{
+  background-color:#3EC1D5 ;
+  border:none;
+  padding: 1em;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.buy-button:hover{
+  box-shadow: 0px 5px 5px #333;
+  color:limegreen;
+}
+
+.product-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap:20px ;
+  row-gap: 20px;
+}
+
+
+/*contact page css*/
+
+#contact {
+background:#F9F9F9;
+padding:25px;
+margin:50px 0;
+}
+
+#contact h3 {
+color: #009599;
+display: block;
+font-size: 30px;
+font-weight: 400;
+}
+
+#contact h4 {
+margin:5px 0 15px;
+display:block;
+font-size:13px;
+}
+
+fieldset {
+border: medium none !important;
+margin: 0 0 10px;
+min-width: 100%;
+padding: 0;
+width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
+width:100%;
+border:1px solid #CCC;
+background:#FFF;
+margin:0 0 5px;
+padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact textarea:hover {
+-webkit-transition:border-color 0.3s ease-in-out;
+-moz-transition:border-color 0.3s ease-in-out;
+transition:border-color 0.3s ease-in-out;
+border:1px solid #AAA;
+}
+
+#contact textarea {
+height:100px;
+max-width:100%;
+resize:none;
+}
+
+#contact button[type="submit"] {
+cursor:pointer;
+width:100%;
+border:none;
+background:#0CF;
+color:#FFF;
+margin:0 0 5px;
+padding:10px;
+font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+background:#09C;
+-webkit-transition:background 0.3s ease-in-out;
+-moz-transition:background 0.3s ease-in-out;
+transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+outline:0;
+border:1px solid #999;
+}
+::-webkit-input-placeholder {
+color:#888;
+}
+:-moz-placeholder {
+color:#888;
+}
+::-moz-placeholder {
+color:#888;
+}
+:-ms-input-placeholder {
+color:#888;
+}
+
+
+
+
+/*------- Footer Area Start -----------*/
+.footer-icons ul li {
+  display: inline-block;
+}
+
+.footer-icons ul li a {
+  border: 1px solid #444;
+  color: #444;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 38px;
+  margin-right: 5px;
+  text-align: center;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.footer-icons {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.footer-contacts p span {
+  color: #3EC1D5;
+  font-weight: 700;
+}
+
+.popular-tag ul li {
+  display: inline-block;
+}
+
+.footer-content {
+  display: block;
+  overflow: hidden;
+}
+
+.popular-tag ul li a:hover, 
+.footer-icons ul li a:hover {
+  background: #3EC1D5;
+  border: 1px solid #3EC1D5;
+  color: #fff;
+}
+
+.popular-tag ul li a {
+  border: 1px solid #444;
+  border-radius: 30px;
+  color: #333;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 5px 3px;
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.4s ease 0s;
+  width: 70px;
+  text-align: center;
+}
+
+.footer-area-bottom {
+  background: #f1f1f1 none repeat scroll 0 0;
+  padding: 15px 0;
+}
+
+.copyright-text a:hover {
+  text-decoration: underline;
+  color: #3EC1D5;
+}
+
+.copyright-text a {
+  color: #444;
+}
+
+.copyright> p {
+  margin-bottom: 0;
+  color: #444;
+}
+
+.credits {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+}
+
+@media only screen and (max-width:800px){
+  header{
+      height:70vh;
   }
 }
