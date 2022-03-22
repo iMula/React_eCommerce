@@ -1,9 +1,8 @@
 import React from 'react'
-import '../partials/home.scss'
-import hero from './hero-image'
+import hero from './images/hero-image.jpeg'
 
 const heroImage = {
-    backgroundImage:`url(${hero-image})`
+    backgroundImage:`url(${hero})`
 }
 export const home = () => {
     return (
@@ -49,57 +48,7 @@ export const home = () => {
                     </div>
                 </div>
             </section>
-
-
-
-
-            {/<!-- Start Footer bottom Area -->/}
-            <footer>
-                <section className="footer-area-bottom">
-                    <div className="container">
-                        <div className="row-footer">
-                            <div className="col-md-12">
-                                <div className="footer-icons">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <span className="ti-facebook"></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span className="ti-twitter"></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span className="ti-linkedin"></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span className="ti-youtube"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-12 col-sm-12 col-xs-12">
-                                <div className="credits">
-                                    <a href="#">Privacy Policy</a> | <a href="#">Terms & Condition</a>
-                                </div>
-                                <div className="copyright text-center">
-                                    <p>
-                                        &copy; Copyright 2022. | <strong><a href="#"> Juvi </a></strong> | All Rights Reserved.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </footer>
+           
         </>
     );
 }

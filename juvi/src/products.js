@@ -1,5 +1,5 @@
 import React from 'react'
-import '../partials/products.scss'
+
 
 export const products = () => {
     return (
@@ -192,56 +192,6 @@ export const products = () => {
                 </section>
             </section>
 
-
-
-
-            {/* <!-- Start Footer bottom Area --> */}
-            <footer>
-                <section className="footer-area-bottom">
-                    <div className="container">
-                        <div classNames="row-footer">
-                            <div className="col-md-12">
-                                <div className="footer-icons">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <span className="ti-facebook"></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span className="ti-twitter"></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span className="ti-linkedin"></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span className="ti-youtube"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-12 col-sm-12 col-xs-12">
-                                <div className="credits">
-                                    <a href="#">Privacy Policy</a> | <a href="#">Terms & Condition</a>
-                                </div>
-                                <div classNam="copyright text-center">
-                                    <p>
-                                        &copy; Copyright 2021. | <strong><a href="#"> Juvi </a></strong> | All Rights Reserved.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </footer>
         </>
     )
 }
