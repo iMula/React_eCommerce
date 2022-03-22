@@ -1,0 +1,52 @@
+.product-list{
+    background-color: #fff;
+    padding:3em;
+  
+  }
+  
+  .product-list h1{
+    text-align: center;
+  }
+  
+  .product-list .card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding:1em;
+    box-shadow: 0px 5px 5px black;
+    text-align: center;
+  }
+  
+  .card .title{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card img{
+    max-width: 100%;
+  }
+  
+  .card .text {
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .buy-button{
+    background-color:#3EC1D5 ;
+    border:none;
+    padding: 1em;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .buy-button:hover{
+    box-shadow: 0px 5px 5px #333;
+    color:limegreen;
+  }
+  
+  .product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap:20px ;
+    row-gap: 20px;
+  }

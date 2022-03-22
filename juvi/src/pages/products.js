@@ -1,4 +1,5 @@
 import React from 'react'
+import '../partials/products.scss'
 
 export const products = () => {
     return (
