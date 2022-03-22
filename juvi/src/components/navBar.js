@@ -1,24 +1,5 @@
-import React from 'react'
-import '../App.css'
-
-export const navBar = () => {
-  return (
-    <>
-    <nav>
-            <ul>
-                <li className="active"><a href="index.html">Home</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-    </nav>
-    </>
-  )
-}
-
-
-
-
 import React from "react";
+import '../App.css'
 
 import {
     BrowserRouter as Router,
@@ -48,9 +29,9 @@ export default class Nav extends React.Component{
           <li>
             <Link to="/profile">About</Link>
           </li>
-                   <li><a href="">About</a></li>
-                   <li><a href="">Contact</a></li>
-                   <li><a href="account.html">Account</a></li>
+                   <li><a href="">Home</a></li>
+                   <li><a href="">Products</a></li>
+                   <li><a href="contact.html">Contact</a></li>
                </ul>
               </nav>
              <Outlet></Outlet>
