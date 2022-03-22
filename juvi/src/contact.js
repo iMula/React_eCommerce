@@ -96,4 +96,6 @@ export const contact = () => {
   </footer>
   </>
     )
-};
+}
+
+export default contact

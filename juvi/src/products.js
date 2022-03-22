@@ -244,4 +244,6 @@ export const products = () => {
             </footer>
         </>
     )
-};
+}
+
+export default products

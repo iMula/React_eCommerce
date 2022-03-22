@@ -1,10 +1,14 @@
 import React from 'react'
 import '../partials/home.scss'
+import hero from './hero-image'
 
+const heroImage = {
+    backgroundImage:`url(${hero-image})`
+}
 export const home = () => {
     return (
         <>
-            <header>
+            <header style={heroImage}>
                 <div className="container">
                     <div className="navbar">
                         <div className="logo">
@@ -99,3 +103,5 @@ export const home = () => {
         </>
     );
 }
+
+export default home
