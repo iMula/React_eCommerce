@@ -1,9 +1,17 @@
 import React from 'react'
 import hero from './images/hero-image.jpeg'
+// import Slideshow from './components/slideShow'
 
 const heroImage = {
     backgroundImage:`url(${hero})`
 }
+
+const slideImages = [
+    "images/forest-green-hoodie.png",
+    "images/juvi-whitetote.jpeg",
+    "images/juvi-blk-tee.jpeg",
+  ];
+
 export const home = () => {
     return (
         <>
@@ -34,20 +42,24 @@ export const home = () => {
                 </div>
             </div>
 
-            {/* <!-- featured products --> */}
-            <section className="categories">
-                <div className="row">
-                    <div className="col-3">
-                        <img src="images/forest-green-hoodie.png" />
-                    </div>
-                    <div className="col-3">
-                        <img src="images/juvi-blk-tee.jpeg" />
-                    </div>
-                    <div className="col-3">
-                        <img src="images/juvi-whitetote.jpeg" />
-                    </div>
-                </div>
-            </section>
+            {/* <!-- featured products slideshow --> */}
+            <div easing="ease">
+        <div className="each-slide">
+          <div style={{ backgroundImage: `url(${slideImages[0]})` }}>
+            <span>Slide 1</span>
+          </div>
+        </div>
+        <div className="each-slide">
+          <div style={{ backgroundImage: `url(${slideImages[1]})` }}>
+            <span>Slide 2</span>
+          </div>
+        </div>
+        <div className="each-slide">
+          <div style={{ backgroundImage: `url(${slideImages[2]})` }}>
+            <span>Slide 3</span>
+          </div>
+        </div>
+      </div>
            
         </>
     );
