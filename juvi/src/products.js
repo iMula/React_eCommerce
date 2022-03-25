@@ -1,9 +1,15 @@
 import React from "react";
+import hero from './images/hero-image.jpeg'
+
+const heroImage = {
+  backgroundImage:`url(${hero})`
+}
+
 
 export const products = () => {
   return (
     <>
-      <header>
+      <header style={heroImage}>
         <div className="container">
           <div className="navbar">
             <div className="logo">
@@ -21,7 +27,7 @@ export const products = () => {
 <!---first product---> */}
           <section className="card">
             <div className="pictures">
-              <img src="images/juvi-olive-tee.jpeg" alt="olive-tee" />
+              <img src="./images/juvi-olive-tee.jpeg" alt="olive-tee" />
             </div>
             <div className="text">
               Grey Juvi Tee-Shirt <br /> $15{" "}

@@ -1,22 +1,19 @@
 import React from 'react'
+import hero from './images/hero-image.jpeg'
 
+const heroImage = {
+  backgroundImage:`url(${hero})`
+}
 
 export const contact = () => {
     return (
         <>
-         <header>
+         <header style={heroImage}>
         <div className="container">
             <div className="navbar">
                 <div className="logo">
                     <img src="juvi-logo.png" alt="logo" width="125px"/>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Shop.html">Shop</a></li>
-                        <li className="active"><a href="contacts.html">Contacts</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
         </header>

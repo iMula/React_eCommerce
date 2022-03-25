@@ -1,5 +1,6 @@
 import React from 'react'
 import hero from './images/hero-image.jpeg'
+
 // import Slideshow from './components/slideShow'
 
 const heroImage = {

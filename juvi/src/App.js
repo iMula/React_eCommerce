@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./home";
 import Products from "./products";
 import Contact from "./contact";
 import Nav from "./components/navBar";
+import footer from "./components/footer";
 
 import {
   BrowserRouter as Router,
@@ -13,11 +13,12 @@ import {
 
 function App() {
   return (
- 
+    
+  <>
 
     <Router>
        <Nav />
-      <div>
+      
        
 
         {/* A <Switch> looks through its children <Route>s and
@@ -27,8 +28,10 @@ function App() {
           <Route path="/products" element={<Products />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
-      </div>
+        <footer />
+   
     </Router>
+    </>
 
   );
 }
