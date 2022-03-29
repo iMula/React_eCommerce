@@ -1,6 +1,7 @@
 import React from "react";
 import hero from './images/hero-image.jpeg'
 
+
 const heroImage = {
   backgroundImage:`url(${hero})`
 }
@@ -13,7 +14,7 @@ export const products = () => {
         <div className="container">
           <div className="navbar">
             <div className="logo">
-              <img src="juvi-logo.png" alt="logo" width="125px" />
+              <img src="./images/juvi-logo.png" alt="logo" width="125px" />
             </div>
           </div>
         </div>
@@ -27,10 +28,10 @@ export const products = () => {
 <!---first product---> */}
           <section className="card">
             <div className="pictures">
-              <img src="./images/juvi-olive-tee.jpeg" alt="olive-tee" />
+              <img src="./images/Olive-tee.png" alt="olive-tee" />
             </div>
             <div className="text">
-              Grey Juvi Tee-Shirt <br /> $15{" "}
+              Olive Juvi T-Shirt <br /> $15{" "}
             </div>
             <div>
               <button className="buy-button">Buy Now</button>
@@ -74,7 +75,7 @@ export const products = () => {
               <img src="images/Pink-tee.png" alt="pink-tee" />
             </div>
             <div className="text">
-              Pink Juvi Tee-Shirt
+              Pink Juvi T-Shirt
               <br /> $15{" "}
             </div>
             <div>
@@ -90,7 +91,7 @@ export const products = () => {
             </div>
             <div className="text">
               Juvi Black Tote Bag
-              <br /> $20{" "}
+              <br /> $25{" "}
             </div>
             <div>
               <button className="buy-button">Buy Now</button>
@@ -104,7 +105,7 @@ export const products = () => {
               <img src="images/off-white-tee.png" alt="white-tee" />
             </div>
             <div className="text">
-              Tan Juvi Tee-shirt
+              Tan Juvi T-shirt
               <br /> $20{" "}
             </div>
             <div>
@@ -133,7 +134,7 @@ export const products = () => {
               <img src="images/juvi-blk-tee.jpeg" alt="black-tee" />
             </div>
             <div className="text">
-              Black Juvi Tee-Shirt
+              Black Juvi T-Shirt
               <br /> $15{" "}
             </div>
             <div>
@@ -164,7 +165,7 @@ export const products = () => {
             </div>
             <div className="text">
               Juvi Beanie
-              <br /> $12{" "}
+              <br /> $15{" "}
             </div>
             <div>
               <button className="buy-button">Buy Now</button>
@@ -178,7 +179,7 @@ export const products = () => {
               <img src="images/Brown-tee.png" alt="brown-tee" />
             </div>
             <div className="text">
-              Brown Juvi Tee-Shirt
+              Brown Juvi T-Shirt
               <br /> $12{" "}
             </div>
             <div>

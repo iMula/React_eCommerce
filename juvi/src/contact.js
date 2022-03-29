@@ -12,7 +12,7 @@ export const contact = () => {
         <div className="container">
             <div className="navbar">
                 <div className="logo">
-                    <img src="juvi-logo.png" alt="logo" width="125px"/>
+                    <img src="./images/juvi-logo.png" alt="logo" width="125px"/>
                 </div>
             </div>
         </div>
