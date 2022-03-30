@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react/cjs/react.production.min";
 import hero from './images/hero-image.jpeg'
 
 
@@ -31,7 +32,10 @@ export const products = () => {
               <img src="./images/Olive-tee.png" alt="olive-tee" />
             </div>
             <div className="text">
-              Olive Juvi T-Shirt <br /> $15{" "}
+              Olive Juvi T-Shirt 
+              <br/>
+              Premium T-Shirt with heavyweight, soft, and sturdy fabric.
+              <br /> $15{" "}
             </div>
             <div>
               <button className="buy-button">Buy Now</button>
@@ -46,7 +50,10 @@ export const products = () => {
               <img src="images/windbreaker.png" alt="windbreaker" />
             </div>
             <div className="text">
-              Double Black Juvi Windbreaker Jacket <br /> $40{" "}
+              Double Black Juvi Windbreaker Jacket
+              <br/>
+              Its mid-weight crinkle woven fabric is unlined for versatility and comfortable layering. 
+             <br /> $40{" "}
             </div>
             <div>
               <button className="buy-button">Buy Now</button>
@@ -61,7 +68,10 @@ export const products = () => {
               <img src="images/navy-blue-hoodie.png" alt="blue-hoodie" />
             </div>
             <div className="text">
-              Navy Blue Juvi Hoodie <br /> $30{" "}
+              Navy Blue Juvi Hoodie 
+              <br/>
+              Pullover Hoodie combines classic style with the soft comfort of fleece.
+              <br /> $30{" "}
             </div>
             <div>
               <button className="buy-button">Buy Now</button>
@@ -76,6 +86,8 @@ export const products = () => {
             </div>
             <div className="text">
               Pink Juvi T-Shirt
+              <br/>
+              Premium T-Shirt with heavyweight, soft, and sturdy fabric.
               <br /> $15{" "}
             </div>
             <div>
@@ -91,6 +103,8 @@ export const products = () => {
             </div>
             <div className="text">
               Juvi Black Tote Bag
+              <br/>
+              Small canvas tote featuring screen printed logo.
               <br /> $25{" "}
             </div>
             <div>
@@ -106,6 +120,8 @@ export const products = () => {
             </div>
             <div className="text">
               Tan Juvi T-shirt
+              <br/>
+              Premium T-Shirt with heavyweight, soft, and sturdy fabric.
               <br /> $20{" "}
             </div>
             <div>
@@ -120,7 +136,10 @@ export const products = () => {
               <img src="images/white-hoodie.png" alt="hoodie" />
             </div>
             <div className="text">
-              White Juvi Hoodie <br /> $30{" "}
+              White Juvi Hoodie 
+              <br/>
+              Pullover Hoodie combines classic style with the soft comfort of fleece.
+              <br /> $30{" "}
             </div>
             <div>
               <button className="buy-button">Buy Now</button>
@@ -135,6 +154,8 @@ export const products = () => {
             </div>
             <div className="text">
               Black Juvi T-Shirt
+              <br/>
+              Premium T-Shirt with heavyweight, soft, and sturdy fabric.
               <br /> $15{" "}
             </div>
             <div>
@@ -150,6 +171,8 @@ export const products = () => {
             </div>
             <div className="text">
               Tan Juvi Tote bag
+              <br/>
+              Small canvas tote featuring screen printed logo.
               <br /> $20{" "}
             </div>
             <div>
@@ -165,6 +188,8 @@ export const products = () => {
             </div>
             <div className="text">
               Juvi Beanie
+              <br/>
+              Foldover design with a knit fabrication, and the iconic Juvi embroidered at the front.
               <br /> $15{" "}
             </div>
             <div>
@@ -180,6 +205,8 @@ export const products = () => {
             </div>
             <div className="text">
               Brown Juvi T-Shirt
+              <br/>
+              Premium T-Shirt with heavyweight, soft, and sturdy fabric.
               <br /> $12{" "}
             </div>
             <div>
@@ -195,6 +222,8 @@ export const products = () => {
             </div>
             <div clasNames="text">
               Black Juvi Hoodie
+              <br/>
+              Pullover Hoodie combines classic style with the soft comfort of fleece.
               <br /> $30{" "}
             </div>
             <div>
