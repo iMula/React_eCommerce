@@ -7,11 +7,6 @@ const heroImage = {
     backgroundImage:`url(${hero})`
 }
 
-const slideImages = [
-    "images/forest-green-hoodie.png",
-    "images/juvi-whitetote.jpeg",
-    "images/juvi-blk-tee.jpeg",
-  ];
 
 export const home = () => {
     return (
@@ -44,23 +39,13 @@ export const home = () => {
             </div>
 
             {/* <!-- featured products slideshow --> */}
-            <div easing="ease">
-        <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[0]})` }}>
-            <span>Slide 1</span>
-          </div>
-        </div>
-        <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[1]})` }}>
-            <span>Slide 2</span>
-          </div>
-        </div>
-        <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[2]})` }}>
-            <span>Slide 3</span>
-          </div>
-        </div>
+            <div className="slideshow-container">
+      <div className="slideshow">
+        <img src="./images/forest-green-hoodie.png" alt="Slide 1" />
+        <img src="./images/juvi-whitetote.jpeg" alt="Slide 4"/>
+        <img src="./images/juvi-blk-tee.jpeg" alt="Slide 3"/>
       </div>
+    </div>
            
         </>
     );

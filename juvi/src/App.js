@@ -3,7 +3,7 @@ import Home from "./home";
 import Products from "./products";
 import Contact from "./contact";
 import Nav from "./components/navBar";
-import footer from "./components/footer";
+import Footer from "./components/footer";
 
 import {
   BrowserRouter as Router,
@@ -28,7 +28,7 @@ function App() {
           <Route path="/products" element={<Products />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
-        <footer />
+        <Footer />
    
     </Router>
     </>
