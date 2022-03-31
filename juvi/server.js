@@ -21,13 +21,16 @@ db.connect(err => {
 
 app.use(cors());
 app.use(express.json());
-
 app.get('/api/products', (req, res) => {
     db.query('SELECT * FROM products', (err, result) => {
         if (err) {
             console.log(err)
         }else {
-            res.send(result);
+            res.json(result);
+            console.log(result)
         }
     })
+});
+app.listen(3001, () => {
+    console.log('running on port 3001');
 });
