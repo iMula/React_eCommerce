@@ -9,11 +9,16 @@ const heroImage = {
  
 export default class products extends React.Component {
  
+  constructor(){
+    super()
+    this.state={products:[]}
+  }
+
  componentDidMount(){
-     axios.get('http://localhost:3001/products')
+     axios.get('http://localhost:3001/api/products')
    .then(res => {
-     const products = res.data;
-     this.setState({ products });
+     this.setState({ products:res.data });
+
    });
  }
  render() {
@@ -34,8 +39,8 @@ export default class products extends React.Component {
       
       <section className="product-container">
 
- {this.state.products.map((card) => {
-  return (
+  {this.state.products.map((card) => (
+  
     <section className="card">
           <div className="pictures">
             <img src={card.image} alt="cardImage" />
@@ -48,9 +53,7 @@ export default class products extends React.Component {
           </div>
         </section>
  
-     
-     )
-    })}
+ ))} 
       </section>
       </section>
   </>
